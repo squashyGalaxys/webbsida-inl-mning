@@ -43,12 +43,11 @@ text-align: center;
 font-weight: inherit;
 font-style: italic;
 }
-
-/*listor*/
-
-li {
-    
+h4 {
+text-align: center;
+font-size: 18px;
 }
+
 
 /* Bild på om-oss sida*/
 .imgProf {
@@ -129,7 +128,7 @@ display: block;
 text-align: left;
 }
 .dropdown-content a:hover {
-    background-color: #d6d6c2;
+background-color: #d6d6c2;
 }
 
 .dropdown:hover .dropdown-content {
@@ -234,23 +233,44 @@ color: white;
 color: #45a049;
 }
 
-/* inbäddad video*/
+/* Inbäddad video */
 .videoBill {
 position: relative;
-padding-bottom: 53%; 
+padding-bottom: 53%;
 height: 0;
 overflow: hidden;
 max-width: 100%;
-margin:  auto;
-flex-wrap: wrap;
+margin: 0 auto; /* Centerar videon horisontellt */
+display: flex; /* Lägg till flex */
+justify-content: center; /* Centerar innehållet i flex-behållaren */
+align-items: center; /* Centerar innehållet vertikalt om möjligt */
+}
+
+.videoBill iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
 i {
-    font-size: 24px;
-    color: #ffffff;
-    margin: 10px;
+font-size: 24px;
+color: #ffffff;
+margin: 10px;
 }
 
 i:hover {
-    color: #C13584;
+color: #C13584;
+}
+
+/* Bilder till historia sidan*/
+.arpnet {
+max-width: 80%;
+height: auto; 
+display: block; 
+margin: 0 auto;
+border-radius: 3%;
+margin-bottom: 1%;
+flex-wrap: wrap;
 }
