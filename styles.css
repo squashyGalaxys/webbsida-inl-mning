@@ -1,69 +1,142 @@
 /* Bakgrundsfärger för sidorna */
 body {
-background-color: #e5e5cc;
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5cc;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-color:#c2c2a3;
-text-align: center;
-margin-top: 5%;
-margin-bottom: 0%;
-font-size: 50px;
-text-transform: uppercase;
-max-height: 50%;
-flex-wrap: wrap;}
+    color: #c2c2a3;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    font-size: 50px;
+    text-transform: uppercase;
+    max-height: 50%;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
 
 h2 {
-color: #c2c2a3;
-text-align: center;
+    color: #c2c2a3;
+    text-align: center;
+    font-size: 40px; /* Lägg till en grundstorlek */
+}
+
+/* Responsiv design för h2 */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+    }
 }
 
 h3 {
-text-align: center;
-font-weight: inherit;
-font-style: italic;
+    text-align: center;
+    font-weight: inherit;
+    font-style: italic;
+    font-size: 30px; /* Lägg till en grundstorlek */
 }
+
+/* Responsiv design för h3 */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 20px;
+    }
+}
+
 h4 {
-text-align: center;
-font-size: 18px;
+    text-align: center;
+    font-size: 18px;
 }
+
+/* Responsiv design för h4 */
+@media (max-width: 768px) {
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h4 {
+        font-size: 14px;
+    }
+}
+
 /* Paragrafer */
 p {
-justify-content: center;
-font-size: 15px;;
-font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* Responsiv design för p */
+@media (max-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 12px;
+    }
+}
+
 
 /* Bild på om-oss sida*/
 .imgProf {
-max-width: 30%;
-height: auto; 
-display: block; 
-margin: 0 auto;
-border-radius: 3%;
-margin-bottom: 1%;
-flex-wrap: wrap;
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
 }
 
 
 /* Dropdown meny */
 .navbar img {
-margin-right: 20px;
-width: 80px; /* Ändra bredden på gif */
-height: auto; /* Bibehåll proportionerna */
+    margin-right: 20px;
+    width: 80px;
+    /* Ändra bredden på gif */
+    height: auto;
+    /* Bibehåll proportionerna */
 }
 
 ul {
-display: flex;
-justify-content: center;
-list-style-type: none;
-margin: 1%;
-padding: 0%;
-overflow: hidden;
-background-color: #c2c2a3;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #c2c2a3;
+    flex-wrap: wrap;
 }
 
 /* navbar flytande till höger 
@@ -72,190 +145,201 @@ float: left;
 } /*
 
 /* text stil */
-li a, .dropbtn {
-display: inline-block;
-color: rgb(0, 0, 0);
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-weight: bold;
+li a,
+.dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /*färg vid hoover*/
-li a:hover, .dropdown:hover .dropbtn {
-background-color: #d6d6c2;
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #d6d6c2;
 }
 
 li.dropdown {
-display: inline-block;
+    display: inline-block;
 }
 
 /* Stil för dropdown*/
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 /* Text i dropdown*/
 .dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
+
 .dropdown-content a:hover {
-background-color: #d6d6c2;
+    background-color: #d6d6c2;
 }
 
 .dropdown:hover .dropdown-content {
-display: block;
+    display: block;
 }
 
 /* kontaktformulär*/
-input[type=text], select, textarea {
-width: 100%; 
-padding: 12px; 
-border: 1px solid #ccc;
-border-radius: 4px; 
-box-sizing: border-box; /* Make sure that padding and width stays in place */
-margin-top: 6px; 
-margin-bottom: 16px; 
-resize: vertical 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
 }
 
 /* Stilar submit button */
 input[type=submit] {
-background-color: #c2c2a3;
-color: white;
-padding: 12px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+    background-color: #c2c2a3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* hoovar över submitt = byter färg till grön */
 input[type=submit]:hover {
-background-color: #45a049;
+    background-color: #45a049;
 }
 
 /* bakgrundfärg och padding */
 .container {
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 50px;
-width: 50%;
-margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
 }
 
 /* Flexbox layout för att hålla footern längst ner */
 body {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Innehållsbehållare */
 .content {
-flex: 1;
+    flex: 1;
 }
 
 /* Footer stil */
 .footer {
-color: white;
-text-align: center;
-padding: 20px 0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 
 }
 
 .footer ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .footer li {
-margin: 0 10px;
+    margin: 0 10px;
 }
 
 .footer a {
-color: rgb(105, 105, 105);
-text-decoration: none;
-font-weight: bold;
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .footer a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .top {
-text-align: center;
-margin: auto;
+    text-align: center;
+    margin: auto;
 }
+
 /* slut på footer */
 
 /* Tillbaka till toppen knappen styling */
 .back-to-top {
-display: inline-block;
-margin-top: 10px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .back-to-top i {
-font-size: 160%;
-color: white;
+    font-size: 160%;
+    color: white;
 }
 
 .back-to-top:hover i {
-color: #45a049;
+    color: #45a049;
 }
 
 /* Inbäddad video */
 .videoBill {
-position: relative;
-padding-bottom: 53%;
-height: 0;
-overflow: hidden;
-max-width: 100%;
-margin: 0 auto; /* Centerar videon horisontellt */
-display: flex; /* Lägg till flex */
-justify-content: center; /* Centerar innehållet i flex-behållaren */
-align-items: center; /* Centerar innehållet vertikalt om möjligt */
+    position: relative;
+    padding-bottom: 53%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    /* Centerar videon horisontellt */
+    display: flex;
+    /* Lägg till flex */
+    justify-content: center;
+    /* Centerar innehållet i flex-behållaren */
+    align-items: center;
+    /* Centerar innehållet vertikalt om möjligt */
 }
 
 .videoBill iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 i {
-font-size: 24px;
-color: #000000;
-margin: 10px;
+    font-size: 24px;
+    color: #000000;
+    margin: 10px;
 }
 
 i:hover {
-color: #C13584;
+    color: #C13584;
 }
 
 /* Bilder till historia sidan*/
 .bilder {
-max-width: 80%;
-height: auto; 
-display: block; 
-margin: 0 auto;
-border-radius: 3%;
-margin-bottom: 1%;
-flex-wrap: wrap;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
 }
 
 .links {
-display: flex;
+    display: flex;
 }
